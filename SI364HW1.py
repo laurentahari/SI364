@@ -131,8 +131,8 @@ def itunes_data():
 
 	base_url = "https://itunes.apple.com/search?term=" 
 	url = base_url + specific_artist
-	x = requests.get(url, params = {"entity": "musicArtist"}).text
-	return json.loads(x)["results"][0]["primaryGenreName"]
+	y = requests.get(url, params = {"entity": "musicArtist"}).text
+	return json.loads(y)["results"][0]["primaryGenreName"]
 
 if __name__ == '__main__':
     app.run()
