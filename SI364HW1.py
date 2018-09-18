@@ -6,6 +6,7 @@
 
 ## List below here, in a comment/comments, the people you worked with on this assignment AND any resources you used to find code (50 point deduction for not doing so). If none, write "None".
 
+#used code from discussion to help with problem 2, got some help from the GSI and used existing templates to help 
 
 ## [PROBLEM 1] - 150 points
 ## Below is code for one of the simplest possible Flask applications. Edit the code so that once you run this application locally and go to the URL 'http://localhost:5000/class', you see a page that says "Welcome to SI 364!"
@@ -105,13 +106,13 @@ def double_number():
 # # Points will be assigned for each specification in the problem.
 
 @app.route('/problem4form', methods = ['GET'])
-def pick_artist():
+def choose_artist():
 	m = """<!DOCTYPE html>
 <html>
 <body>
 <form name="myForm" action="/itunes_info" method="get">
 <p>
-Pick an artist to find out what genre of music they sing. <b> <br>
+Choose a music artist to find out what genre they sing. <b> <br>
 <input type="radio" name="options" value="Drake"> Drake <br>
 <input type="radio" name="options" value="Jay Z"> Jay Z <br>
 <input type="radio" name="options" value="Ed Sheeran"> Ed Sheeran <br>
